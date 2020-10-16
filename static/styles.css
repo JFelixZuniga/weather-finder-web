@@ -23,11 +23,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
-.contenedor {
-  margin: 0 auto;
-  max-width: 120rem;
-  width: 100%;
-}
+
 a {
   text-decoration: none;
   color: var(--text-color);
@@ -42,6 +38,62 @@ img {
 p {
   margin-bottom: 1.5rem;
   line-height: 2rem;
+}
+
+.search-form {
+  margin: 2rem 2rem;
+}
+
+.searchbox {
+  padding: 1rem 2rem;
+  background: var(--text-color);
+  max-width: 48rem;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.search {
+  width: 100%;
+  background: var(--text-color);
+  border: none;
+  font-size: 1.8rem;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.city {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.date {
+  font-size: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+}
+
+.temp-img {
+  width: 5rem;
+  margin-top: 1rem;
+}
+
+.temp {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.weather {
+  font-size: 3.5rem;
+  font-weight: 1.8rem;
 }
 
 /************* Footer *************/
