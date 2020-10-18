@@ -63,6 +63,16 @@ p {
   outline: none;
 }
 
+.weather-card {
+  margin: 20px 20px;
+  background: var(--text-color);
+  color: var(--bg-color);
+  padding: 20px;
+  text-align: center;
+  border-radius: 3px;
+  display: none;
+}
+
 .city {
   font-size: 3.5rem;
   text-transform: uppercase;
