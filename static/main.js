@@ -14,11 +14,11 @@ const range = document.getElementById("range");
 
 function updateImages(data) {
   const temp = toCelsius(data.main.temp);
-  let src = "images/temp-mid.png";
+  let src = "./static/images/temp-mid.png";
   if (temp > 26) {
-    src = "images/temp-high.png";
+    src = "./static/images/temp-high.png";
   } else if (temp < 20) {
-    src = "images/temp-low.png";
+    src = "./static/images/temp-low.png";
   }
   tempImg.src = src;
 }
@@ -32,11 +32,12 @@ async function search(query) {
     card.style.display = "block";
     city.innerHTML = `${data.name}, ${data.sys.country}`;
     data.innerHTML = new Date().toLocaleDateString();
-    temp.innerHTML = `${toCelsius(data.main.temp)}c`;
+    temp.innerHTML = `${toCelsius(data.main.temp)}°c`;
+    console.log(date)
     weather.innerHTML = data.weather[0].description;
-    range.innerHTML = `${toCelsius(data.main.temp_min)}c / ${toCelsius(
+    range.innerHTML = `${toCelsius(data.main.temp_min)}°c / ${toCelsius(
       data.main.temp_max
-    )}c`;
+    )}°c`;
     updateImages(data);
   } catch (err) {
     console.log(err);
